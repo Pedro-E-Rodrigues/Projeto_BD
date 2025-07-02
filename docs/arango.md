@@ -1,6 +1,6 @@
-# ArangoDB - Conceitos iniciais, funcionalidades e comandos básicos
+# Conceitos iniciais, funcionalidades e comandos básicos
 
-ArangoDB é um banco de dados NoSQL multi-modal, o que significa que pode armazenar e gerenciar dados usando diferentes modelos.
+O Arango é um banco de dados NoSQL multi-modal, o que significa que pode armazenar e gerenciar dados usando diferentes modelos.
 
 ## Características Principais
 
@@ -43,4 +43,16 @@ db.collection("nome_da_colecao").insert({"chave": "valor"})
 
 # Consultar Documento
 db.collection("nome_da_colecao").get({"chave": "valor"})
+
+# Atualizar Documento
+db.collection("nome_da_colecao").update({"_key": "chave_existente"}, {"novo_campo": "novo_valor"})
+
+# Excluir Documento
+db.collection("nome_da_colecao").delete({"_key": "chave_existente"})
+
+# Consultar com AQL
+query = "FOR doc IN nome_da_colecao RETURN doc"
+cursor = db.aql.execute(query)
+for document in cursor:
+    print(document)
 ```
