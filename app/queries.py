@@ -17,19 +17,19 @@ def contar_alunos_por_curso():
 def mostrar_cadeia_prerequisitos(curso_key: str, niveis: int = 3):
     start_id = f"cursos/{curso_key}"
     query = f"""
-    FOR v, e, p IN 1..{niveis} INBOUND '{start_id}'
-      GRAPH 'grafo_academico'
+    FOR v, e, p IN 1..{niveis} INBOUND '{start_id}' requisitos
       OPTIONS {{ bfs: true, uniqueVertices: 'global' }}
       RETURN p.vertices[*]._key
     """
     cursor = db.aql.execute(query)
-    caminhos = [c for c in cursor]
+    caminhos = list(cursor)
     if caminhos:
-        print("Caminhos de pré‑requisitos encontrados:")
+        print("Pré‑requisitos encontrados (por nível):")
         for caminho in caminhos:
             print(" → ".join(caminho))
     else:
         print("Nenhum pré‑requisito encontrado.")
+
 
 def listar_alunos_sem_matricula():
     query = """
