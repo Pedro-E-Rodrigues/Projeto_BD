@@ -1,0 +1,5 @@
+python-arango
+python-dotenv
+tabulate
+networkx
+jupyter
