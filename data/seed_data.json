@@ -1,0 +1,35 @@
+{
+  "alunos": [
+    { "_key": "a01", "nome": "Alice Santos", "matricula": "2023001" },
+    { "_key": "a02", "nome": "Bruno Oliveira", "matricula": "2023002" },
+    { "_key": "a03", "nome": "Carla Pereira", "matricula": "2023003" },
+    { "_key": "a04", "nome": "Daniel Costa", "matricula": "2023004" },
+    { "_key": "a05", "nome": "Eduardo Lima", "matricula": "2023005" },
+    { "_key": "a06", "nome": "Fernanda Souza", "matricula": "2023006" },
+    { "_key": "a07", "nome": "Gabriel Mendes", "matricula": "2023007" },
+    { "_key": "a08", "nome": "Helena Ribeiro" },
+    { "_key": "a09", "nome": "Igor Carvalho", "matricula": "2023009" },
+    { "_key": "a10", "nome": "Joana Duarte" },
+    { "_key": "a11", "nome": "Lucas Almeida", "matricula": "2023010" },
+    { "_key": "a12", "nome": "Maria Clara", "matricula": "2023011" },
+    { "_key": "a13", "nome": "Nicolas Rocha" },
+    { "_key": "a14", "nome": "Otávio Moreira", "matricula": "2023013" },
+    { "_key": "a15", "nome": "Paula Fernandes", "matricula": "2023014" },
+    { "_key": "a16", "nome": "Bruno Oliveira", "matricula": "2023015" },
+    { "_key": "a17", "nome": "Rafaela Nunes", "matricula": "2023016" },
+    { "_key": "a18", "nome": "Samuel Torres" },
+    { "_key": "a19", "nome": "Tatiane Lima", "matricula": "2023018" },
+    { "_key": "a20", "nome": "Vinícius Barros", "matricula": "2023019" }
+  ],
+  "cursos": [
+    { "_key": "c01", "nome_curso": "Matemática Básica", "codigo": "MAT101" },
+    { "_key": "c02", "nome_curso": "Introdução à Física", "codigo": "FIS101" },
+    { "_key": "c03", "nome_curso": "História Geral", "codigo": "HIS101" },
+    { "_key": "c04", "nome_curso": "Química Orgânica", "codigo": "QUI101" },
+    {
+      "_key": "c05",
+      "nome_curso": "Programação em Python",
+      "codigo": "PROG101"
+    }
+  ]
+}
