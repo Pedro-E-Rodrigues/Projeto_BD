@@ -8,6 +8,8 @@
 
 - **Tecnologias**: [Python](https://docs.python.org/pt-br/3/), [ArangoDB](https://docs.arangodb.com/3.11/concepts/data-structure/documents/), [Docker](https://docs.docker.com/)
 
+- **Apresentação para o seminário**: [pdf](https://github.com/Pedro-E-Rodrigues/Projeto_BD/blob/main/docs/apresentacao.pdf), [pptx](https://github.com/Pedro-E-Rodrigues/Projeto_BD/blob/main/docs/apresentacao.pptx)
+
 ## Tecnologias e execução
 
 - Docker & Docker Compose instalados
